@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youth Protocol Library — Actionable Longevity Plans | HowToBeYoung</title>
+  <meta name="description" content="Actionable, time-bound longevity protocols for every youth system. Each plan includes the science, budget options, cultural adaptations, and progress tracking. Free for everyone.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://howtobeyoung.com/en/protocols.html">
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="en" href="https://howtobeyoung.com/en/protocols.html">
+  <link rel="alternate" hreflang="es" href="https://howtobeyoung.com/es/protocols.html">
+  <link rel="alternate" hreflang="fr" href="https://howtobeyoung.com/fr/protocols.html">
+  <link rel="alternate" hreflang="x-default" href="https://howtobeyoung.com/en/protocols.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Youth Protocol Library — Actionable Longevity Plans | HowToBeYoung">
+  <meta property="og:description" content="Actionable, time-bound longevity protocols for every youth system. Science-backed plans with budget options and cultural adaptations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://howtobeyoung.com/en/protocols.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Youth Protocol Library — Actionable Longevity Plans | HowToBeYoung">
+  <meta name="twitter:description" content="Actionable, time-bound longevity protocols for every youth system. Science-backed plans with budget options and cultural adaptations.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* ---- Protocol Page-Specific Styles ---- */
+
+    /* Content standard box */
+    .content-standard {
+      max-width: var(--max-width-narrow);
+      margin: 0 auto;
+      padding: var(--space-2xl) var(--container-padding);
+    }
+
+    .content-standard__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+
+    .content-standard__item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      background: var(--color-white);
+      border-radius: var(--border-radius-md);
+      padding: var(--space-lg);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-gray-200);
+      transition: all var(--transition-base);
+    }
+
+    .content-standard__item:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .content-standard__number {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: var(--color-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: var(--font-size-sm);
+    }
+
+    .content-standard__text {
+      flex: 1;
+    }
+
+    .content-standard__text strong {
+      display: block;
+      color: var(--color-secondary);
+      margin-bottom: var(--space-xs);
+    }
+
+    .content-standard__text span {
+      font-size: var(--font-size-sm);
+      color: var(--color-gray-500);
+      line-height: var(--line-height-relaxed);
+    }
+
+    /* Protocol full sections */
+    .protocol-section {
+      padding: var(--space-4xl) 0;
+    }
+
+    .protocol-section:nth-child(odd) {
+      background-color: var(--color-white);
+    }
+
+    .protocol-section:nth-child(even) {
+      background-color: var(--color-light);
+    }
+
+    .protocol-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-md);
+      margin-bottom: var(--space-xl);
+    }
+
+    .protocol-duration-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: 0.5rem 1.25rem;
+      border-radius: var(--border-radius-full);
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      color: var(--color-white);
+      letter-spacing: 0.5px;
+    }
+
+    .protocol-duration-badge--coral { background-color: var(--color-primary); }
+    .protocol-duration-badge--green { background-color: var(--color-success); }
+    .protocol-duration-badge--blue { background-color: var(--color-info); }
+    .protocol-duration-badge--dark { background-color: var(--color-secondary); }
+    .protocol-duration-badge--gold { background-color: var(--color-accent-dark); }
+
+    .protocol-title {
+      font-size: var(--font-size-2xl);
+      color: var(--color-secondary);
+      flex-basis: 100%;
+    }
+
+    .protocol-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      flex-basis: 100%;
+    }
+
+    .protocol-overview {
+      font-size: var(--font-size-md);
+      color: var(--color-gray-600);
+      line-height: var(--line-height-relaxed);
+      margin-bottom: var(--space-2xl);
+      max-width: 720px;
+    }
+
+    .protocol-detail {
+      margin-bottom: var(--space-2xl);
+    }
+
+    .protocol-detail__heading {
+      font-family: var(--font-body);
+      font-size: var(--font-size-lg);
+      font-weight: 700;
+      color: var(--color-secondary);
+      margin-bottom: var(--space-md);
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .protocol-detail__heading svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      color: var(--color-primary);
+    }
+
+    .protocol-detail ul {
+      list-style: disc;
+      padding-left: var(--space-xl);
+      margin-bottom: var(--space-md);
+    }
+
+    .protocol-detail li {
+      padding: var(--space-xs) 0;
+      color: var(--color-gray-600);
+      line-height: var(--line-height-relaxed);
+      font-size: var(--font-size-base);
+    }
+
+    .protocol-detail li strong {
+      color: var(--color-secondary);
+    }
+
+    .protocol-detail p {
+      color: var(--color-gray-600);
+      line-height: var(--line-height-relaxed);
+    }
+
+    /* Day-by-day steps */
+    .protocol-steps {
+      list-style: none !important;
+      padding-left: 0 !important;
+      counter-reset: step-counter;
+    }
+
+    .protocol-steps li {
+      counter-increment: step-counter;
+      padding: var(--space-md) var(--space-md) var(--space-md) var(--space-3xl);
+      position: relative;
+      border-left: 2px solid var(--color-gray-200);
+      margin-bottom: var(--space-sm);
+    }
+
+    .protocol-steps li::before {
+      content: counter(step-counter);
+      position: absolute;
+      left: -15px;
+      top: var(--space-md);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: var(--color-white);
+      font-size: var(--font-size-xs);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .protocol-steps li:last-child {
+      border-left-color: transparent;
+    }
+
+    /* Difficulty indicator */
+    .protocol-difficulty {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-sm);
+      padding: var(--space-sm) var(--space-md);
+      border-radius: var(--border-radius-full);
+      background: var(--color-gray-100);
+      font-size: var(--font-size-sm);
+      font-weight: 600;
+      color: var(--color-gray-600);
+      margin-bottom: var(--space-xl);
+    }
+
+    .protocol-difficulty__dots {
+      display: flex;
+      gap: 4px;
+    }
+
+    .protocol-difficulty__dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--color-gray-300);
+    }
+
+    .protocol-difficulty__dot--filled {
+      background: var(--color-primary);
+    }
+
+    /* Ethical note */
+    .ethical-note {
+      background: linear-gradient(135deg, var(--color-light) 0%, var(--color-light-warm) 100%);
+      border-radius: var(--border-radius-xl);
+      padding: var(--space-2xl);
+      max-width: var(--max-width-narrow);
+      margin: 0 auto;
+      text-align: center;
+      border: 2px solid var(--color-gray-200);
+    }
+
+    .ethical-note h3 {
+      color: var(--color-secondary);
+      margin-bottom: var(--space-md);
+    }
+
+    .ethical-note p {
+      color: var(--color-gray-600);
+      line-height: var(--line-height-relaxed);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Protocol grid within each section */
+    .protocol-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-2xl);
+    }
+
+    @media (min-width: 640px) {
+      .content-standard__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .protocol-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .protocol-title {
+        font-size: var(--font-size-3xl);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .content-standard__grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .content-standard__grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      .protocol-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media print {
+      .protocol-section { padding: 1.5rem 0; page-break-inside: avoid; }
+      .protocol-duration-badge { border: 1px solid #ccc; color: #000; background: #eee; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="HowToBeYoung Home">
+        How To Be <span>Young</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="youth-score.html" class="nav__link">Youth Score</a>
+        <a href="youth-systems.html" class="nav__link">Systems</a>
+        <a href="stories.html" class="nav__link">Stories</a>
+        <a href="protocols.html" class="nav__link nav__link--active" aria-current="page">Protocols</a>
+        <a href="life-stages.html" class="nav__link">Life Stages</a>
+        <a href="about.html" class="nav__link">About</a>
+      </div>
+
+      <div class="nav__actions">
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+          <a href="protocols.html" class="lang-switcher__btn lang-switcher__btn--active" aria-label="English (current)" aria-current="true">EN</a>
+          <a href="../es/protocols.html" class="lang-switcher__btn" hreflang="es" aria-label="Espa&ntilde;ol">ES</a>
+          <a href="../fr/protocols.html" class="lang-switcher__btn" hreflang="fr" aria-label="Fran&ccedil;ais">FR</a>
+        </div>
+
+        <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobile-menu" role="menu">
+      <a href="index.html" class="nav__link" role="menuitem">Home</a>
+      <a href="youth-score.html" class="nav__link" role="menuitem">Youth Score</a>
+      <a href="youth-systems.html" class="nav__link" role="menuitem">Systems</a>
+      <a href="stories.html" class="nav__link" role="menuitem">Stories</a>
+      <a href="protocols.html" class="nav__link nav__link--active" role="menuitem" aria-current="page">Protocols</a>
+      <a href="life-stages.html" class="nav__link" role="menuitem">Life Stages</a>
+      <a href="about.html" class="nav__link" role="menuitem">About</a>
+      <div class="lang-switcher" role="group" aria-label="Language selector" style="margin-top: var(--space-md);">
+        <a href="protocols.html" class="lang-switcher__btn lang-switcher__btn--active" aria-label="English (current)">EN</a>
+        <a href="../es/protocols.html" class="lang-switcher__btn" hreflang="es" aria-label="Espa&ntilde;ol">ES</a>
+        <a href="../fr/protocols.html" class="lang-switcher__btn" hreflang="fr" aria-label="Fran&ccedil;ais">FR</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HERO ========== -->
+  <header class="page-hero" role="banner">
+    <div class="container fade-in">
+      <h1 class="page-hero__title">The Youth Protocol Library</h1>
+      <p class="page-hero__subtitle" style="max-width: 720px;">
+        Actionable plans with real timelines. Every protocol includes what to do, why it works, how to do it if you're broke, cultural adaptations, and how to track if it's working.
+      </p>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ========== CONTENT STANDARD CALLOUT ========== -->
+    <section class="section bg-warm" aria-labelledby="content-standard-heading">
+      <div class="content-standard">
+        <div class="section__header fade-in">
+          <span class="section__eyebrow">Our Standard</span>
+          <h2 class="section__title" id="content-standard-heading">Every Protocol Follows 5 Rules</h2>
+          <p class="section__subtitle">No fluff, no filler. Each protocol is built on the same evidence-based framework so you can trust what you read and apply it immediately.</p>
+        </div>
+
+        <div class="content-standard__grid stagger-children">
+          <div class="content-standard__item">
+            <div class="content-standard__number" aria-hidden="true">1</div>
+            <div class="content-standard__text">
+              <strong>What to Do</strong>
+              <span>Clear, step-by-step actions with specific timelines. No vague advice.</span>
+            </div>
+          </div>
+          <div class="content-standard__item">
+            <div class="content-standard__number" aria-hidden="true">2</div>
+            <div class="content-standard__text">
+              <strong>Why It Works (Science)</strong>
+              <span>Referenced research and biological mechanisms behind every recommendation.</span>
+            </div>
+          </div>
+          <div class="content-standard__item">
+            <div class="content-standard__number" aria-hidden="true">3</div>
+            <div class="content-standard__text">
+              <strong>How to Do It Broke</strong>
+              <span>Every protocol has a zero-cost or low-cost version. Longevity is not a luxury.</span>
+            </div>
+          </div>
+          <div class="content-standard__item">
+            <div class="content-standard__number" aria-hidden="true">4</div>
+            <div class="content-standard__text">
+              <strong>Cultural Adaptations</strong>
+              <span>Variations for different regions, traditions, and lifestyles around the world.</span>
+            </div>
+          </div>
+          <div class="content-standard__item">
+            <div class="content-standard__number" aria-hidden="true">5</div>
+            <div class="content-standard__text">
+              <strong>Track Your Progress</strong>
+              <span>Measurable markers so you know whether the protocol is actually working for you.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOCOL 1: 7-Day Sleep Repair ========== -->
+    <section class="protocol-section" id="sleep-repair" aria-labelledby="protocol-sleep-title">
+      <div class="container">
+        <div class="protocol-header fade-in">
+          <span class="protocol-duration-badge protocol-duration-badge--dark">7 Days</span>
+          <div class="protocol-difficulty" aria-label="Difficulty: beginner (1 out of 3)">
+            Beginner
+            <span class="protocol-difficulty__dots" aria-hidden="true">
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot"></span>
+              <span class="protocol-difficulty__dot"></span>
+            </span>
+          </div>
+          <h2 class="protocol-title" id="protocol-sleep-title">7-Day Sleep Repair</h2>
+          <div class="protocol-tags">
+            <span class="tag tag--info">Sleep</span>
+            <span class="tag tag--accent">Brain</span>
+            <span class="tag tag--primary">Hormones</span>
+            <span class="tag tag--success">Stress</span>
+          </div>
+        </div>
+
+        <p class="protocol-overview fade-in">
+          A day-by-day plan for resetting your sleep architecture. You will establish a fixed wake time, optimize light exposure, build an evening wind-down routine, and redesign your bedroom environment for deep, restorative sleep.
+        </p>
+
+        <div class="protocol-grid">
+          <!-- What to Do -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              What to Do
+            </h3>
+            <ul class="protocol-steps">
+              <li><strong>Day 1-2: Lock your wake time.</strong> Choose a fixed wake time (within 30 min of sunrise if possible) and stick to it, even on weekends. No snooze button. Get outside within 10 minutes of waking for bright light exposure.</li>
+              <li><strong>Day 2-3: Audit your bedroom.</strong> Remove or cover all light sources. Target a room temperature of 65-68 F (18-20 C). If you cannot control temperature, use breathable cotton or linen sheets.</li>
+              <li><strong>Day 3-4: Build an evening wind-down.</strong> Set a "screens off" alarm 60 minutes before bed. Replace scrolling with a calming routine: stretching, reading a physical book, journaling, or breathing exercises.</li>
+              <li><strong>Day 4-5: Regulate caffeine and meals.</strong> No caffeine after noon. Finish your last meal at least 2-3 hours before sleep. If hungry, a small snack with tryptophan (banana, warm milk, a few almonds) is fine.</li>
+              <li><strong>Day 5-6: Add a body-based cue.</strong> Take a warm shower or bath 90 minutes before bed. The drop in core body temperature afterward signals your brain to produce melatonin.</li>
+              <li><strong>Day 6-7: Consolidate and protect.</strong> Repeat the full routine. Journal what changed. Note sleep latency (how fast you fall asleep), number of wake-ups, and morning energy level on a 1-10 scale.</li>
+            </ul>
+          </div>
+
+          <!-- The Science -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              The Science
+            </h3>
+            <div class="callout callout--science">
+              <p class="callout__title">Why This Works</p>
+              <p>Your circadian rhythm is governed by the suprachiasmatic nucleus (SCN) in the hypothalamus, which responds primarily to light cues. Morning bright light exposure (>10,000 lux) suppresses melatonin and sets your 24-hour clock. A fixed wake time is more important than a fixed bedtime because it anchors the entire cycle.</p>
+            </div>
+            <ul>
+              <li>Walker (2017): Consistent sleep schedules improve sleep architecture quality and increase time in slow-wave (deep) sleep stages.</li>
+              <li>Huberman Lab research on light exposure: 2-10 minutes of morning sunlight shifts circadian phase and improves sleep onset latency.</li>
+              <li>Haghayegh et al. (2019): Warm bathing 1-2 hours before bed reduces sleep onset latency by an average of 10 minutes.</li>
+              <li>Core body temperature drop of 1-2 degrees triggers melatonin release and signals the sleep drive.</li>
+            </ul>
+          </div>
+
+          <!-- Budget Version -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Budget Version
+            </h3>
+            <div class="callout callout--tip">
+              <p class="callout__title">Zero Cost</p>
+              <p>This entire protocol can be done for free. You do not need a sleep tracker, supplements, or new bedding to start.</p>
+            </div>
+            <ul>
+              <li><strong>Sleep tracking:</strong> Use your phone's free clock app to log wake time and bedtime. Or use a paper journal.</li>
+              <li><strong>Blackout solution:</strong> Pin a dark towel, blanket, or black garbage bags over windows. Flip your phone face-down.</li>
+              <li><strong>Relaxation techniques:</strong> 4-7-8 breathing (free), progressive muscle relaxation (free), or body scan meditation using free YouTube audio.</li>
+              <li><strong>Temperature:</strong> Open a window, use a damp cloth, or sleep with fewer layers.</li>
+              <li><strong>Morning light:</strong> Step outside your door. No gadget needed.</li>
+            </ul>
+          </div>
+
+          <!-- Cultural Adaptations -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Cultural Adaptations
+            </h3>
+            <ul>
+              <li><strong>Siesta cultures (Spain, Latin America):</strong> Keep your afternoon rest, but limit it to 20-30 minutes before 3 PM. A short nap does not disrupt nighttime sleep if timed correctly.</li>
+              <li><strong>Nordic countries (winter darkness):</strong> Use a 10,000-lux light therapy lamp for 20-30 minutes at your fixed wake time to compensate for limited natural sunlight.</li>
+              <li><strong>Japanese sleeping practices:</strong> Tatami and futon sleeping on firm surfaces supports spinal alignment. The cultural practice of family co-sleeping (kawa no ji) can continue with individual wind-down routines.</li>
+              <li><strong>Tropical climates:</strong> Focus on airflow and breathable fabrics. A fan or open window can replace air conditioning for the temperature cue.</li>
+            </ul>
+          </div>
+
+          <!-- Track Your Progress -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Track Your Progress
+            </h3>
+            <div class="callout callout--tip">
+              <p class="callout__title">Measurable Markers</p>
+              <p>Check these on Day 1 and Day 7. You should see improvement in at least two of these within one week.</p>
+            </div>
+            <ul>
+              <li><strong>Sleep latency:</strong> How many minutes from lights-off to falling asleep. Target: under 20 minutes.</li>
+              <li><strong>Night wake-ups:</strong> How many times you fully wake during the night. Target: 0-1 per night.</li>
+              <li><strong>Morning energy rating:</strong> Rate 1-10 within 30 minutes of waking. Target: 6 or above by Day 7.</li>
+              <li><strong>Consistent wake time:</strong> Did you hit your target wake time within 15 minutes every day?</li>
+            </ul>
+          </div>
+
+          <!-- Tip callout -->
+          <div class="protocol-detail fade-in">
+            <div class="callout callout--warning">
+              <p class="callout__title">Important Note</p>
+              <p>If you have chronic insomnia lasting more than 3 months, this protocol is a helpful foundation but may not be sufficient on its own. Consider looking into Cognitive Behavioral Therapy for Insomnia (CBT-I), which is the gold-standard clinical treatment and is available through free online programs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOCOL 2: 10-Day Inflammation Reset ========== -->
+    <section class="protocol-section" id="inflammation-reset" aria-labelledby="protocol-inflammation-title">
+      <div class="container">
+        <div class="protocol-header fade-in">
+          <span class="protocol-duration-badge protocol-duration-badge--coral">10 Days</span>
+          <div class="protocol-difficulty" aria-label="Difficulty: beginner (1 out of 3)">
+            Beginner
+            <span class="protocol-difficulty__dots" aria-hidden="true">
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot"></span>
+              <span class="protocol-difficulty__dot"></span>
+            </span>
+          </div>
+          <h2 class="protocol-title" id="protocol-inflammation-title">10-Day Inflammation Reset</h2>
+          <div class="protocol-tags">
+            <span class="tag tag--success">Gut</span>
+            <span class="tag tag--info">Immunity</span>
+            <span class="tag tag--primary">Food</span>
+            <span class="tag tag--accent">Skin</span>
+          </div>
+        </div>
+
+        <p class="protocol-overview fade-in">
+          An anti-inflammatory eating plan (not a diet!), movement protocol, and stress reduction strategy designed to lower systemic inflammation. This is not about restriction. It is about flooding your body with what it needs to calm down.
+        </p>
+
+        <div class="protocol-grid">
+          <!-- What to Do -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              What to Do
+            </h3>
+            <ul class="protocol-steps">
+              <li><strong>Day 1-3: Add, don't subtract.</strong> Add one anti-inflammatory food to every meal. Ginger in tea, turmeric in rice, garlic in cooking, leafy greens as a side. Do not remove anything yet. Just add.</li>
+              <li><strong>Day 3-5: Reduce processed seed oils.</strong> Cook with olive oil, coconut oil, or butter instead. Read labels on packaged foods for soybean, sunflower, or canola oil as the first ingredient.</li>
+              <li><strong>Day 4-7: Daily movement.</strong> Walk for 20-30 minutes at a moderate pace. Movement is anti-inflammatory. No intense exercise needed. Add gentle stretching for 5 minutes.</li>
+              <li><strong>Day 5-8: Sleep and stress integration.</strong> Use one stress-reduction technique daily (deep breathing, 5-minute journaling, or a tech-free walk). Prioritize 7-8 hours of sleep.</li>
+              <li><strong>Day 7-10: Increase omega-3 sources.</strong> Add fatty fish (sardines, mackerel, salmon), walnuts, chia seeds, or flaxseeds. Aim for omega-3-rich food at least 3 times this week.</li>
+              <li><strong>Day 10: Assess and journal.</strong> Write down changes in energy, joint pain, bloating, skin clarity, and overall mood. Compare to Day 1.</li>
+            </ul>
+          </div>
+
+          <!-- The Science -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              The Science
+            </h3>
+            <div class="callout callout--science">
+              <p class="callout__title">Why This Works</p>
+              <p>Chronic low-grade inflammation (measured by C-reactive protein, or CRP) is a key driver of accelerated aging. It damages tissues, disrupts hormone signaling, and accelerates cellular senescence. Dietary polyphenols, omega-3 fatty acids, and fiber directly modulate inflammatory pathways.</p>
+            </div>
+            <ul>
+              <li>Calder (2017): Omega-3 fatty acids reduce production of pro-inflammatory eicosanoids and cytokines (TNF-alpha, IL-6).</li>
+              <li>A high omega-6/omega-3 ratio (common in processed foods) promotes inflammation. Targeting a 4:1 or lower ratio is protective.</li>
+              <li>The gut-inflammation axis: 70% of immune cells reside in the gut. Fiber feeds beneficial bacteria that produce short-chain fatty acids (SCFAs), which are directly anti-inflammatory.</li>
+              <li>Moderate walking (150 min/week) reduces CRP levels by 20-30% according to meta-analyses of randomized trials.</li>
+            </ul>
+          </div>
+
+          <!-- Budget Version -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Budget Version
+            </h3>
+            <div class="callout callout--tip">
+              <p class="callout__title">Affordable Anti-Inflammatory Foods</p>
+              <p>The most powerful anti-inflammatory foods are among the cheapest in any market, worldwide.</p>
+            </div>
+            <ul>
+              <li><strong>Ginger root:</strong> One of the cheapest spices globally. Steep slices in hot water for tea or grate into any dish.</li>
+              <li><strong>Turmeric:</strong> Buy powdered in bulk. Combine with black pepper (increases absorption by 2,000%) and a fat source.</li>
+              <li><strong>Garlic:</strong> Anti-inflammatory, antimicrobial, and available almost everywhere for pennies per clove.</li>
+              <li><strong>Leafy greens:</strong> Kale, spinach, collard greens, moringa leaves. Buy what is local and seasonal for the lowest price.</li>
+              <li><strong>Canned sardines:</strong> One of the most affordable omega-3 sources available globally.</li>
+              <li><strong>Flaxseeds:</strong> Buy whole in bulk. Grind as needed. Very cheap, very high in plant-based omega-3 (ALA).</li>
+            </ul>
+          </div>
+
+          <!-- Cultural Adaptations -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Cultural Adaptations
+            </h3>
+            <ul>
+              <li><strong>Ayurvedic approach (South Asia):</strong> Golden milk (turmeric, ginger, black pepper in warm milk) is a traditional anti-inflammatory preparation. Use ashwagandha and tulsi teas as stress-reducing additions.</li>
+              <li><strong>Mediterranean approach:</strong> Extra virgin olive oil as the primary fat. Tomato-based sauces rich in lycopene. Fresh herbs (oregano, rosemary, thyme) in daily cooking. All are potent anti-inflammatory agents.</li>
+              <li><strong>West African healing soups:</strong> Pepper soup with ginger and garlic. Okra soup rich in soluble fiber. Moringa leaf stews loaded with antioxidants and vitamin C.</li>
+              <li><strong>East Asian approach:</strong> Green tea (rich in EGCG), seaweed-based soups, fermented vegetables, and ginger-heavy broths.</li>
+            </ul>
+          </div>
+
+          <!-- Track Your Progress -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Track Your Progress
+            </h3>
+            <ul>
+              <li><strong>Joint pain:</strong> Rate overall stiffness and soreness 1-10 on Day 1 and Day 10.</li>
+              <li><strong>Bloating:</strong> Rate abdominal comfort after meals on a 1-10 scale daily.</li>
+              <li><strong>Energy levels:</strong> Rate afternoon energy (2-4 PM) daily. Look for a trend upward by Day 7.</li>
+              <li><strong>Skin clarity:</strong> Take a photo on Day 1 and Day 10 in the same lighting. Note redness, puffiness, or breakouts.</li>
+              <li><strong>Digestion regularity:</strong> Note bowel movement frequency and ease. Improvement suggests gut inflammation is reducing.</li>
+            </ul>
+          </div>
+
+          <div class="protocol-detail fade-in">
+            <div class="callout callout--warning">
+              <p class="callout__title">This Is Not a Diet</p>
+              <p>This protocol adds foods. It does not restrict calories or food groups. If you have a history of disordered eating, approach this with self-compassion. The goal is nourishment, not deprivation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOCOL 3: 30-Day Strength Rebuild ========== -->
+    <section class="protocol-section" id="strength-rebuild" aria-labelledby="protocol-strength-title">
+      <div class="container">
+        <div class="protocol-header fade-in">
+          <span class="protocol-duration-badge protocol-duration-badge--green">30 Days</span>
+          <div class="protocol-difficulty" aria-label="Difficulty: intermediate (2 out of 3)">
+            Intermediate
+            <span class="protocol-difficulty__dots" aria-hidden="true">
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot"></span>
+            </span>
+          </div>
+          <h2 class="protocol-title" id="protocol-strength-title">30-Day Strength Rebuild</h2>
+          <div class="protocol-tags">
+            <span class="tag tag--primary">Strength</span>
+            <span class="tag tag--info">Heart</span>
+            <span class="tag tag--accent">Hormones</span>
+            <span class="tag tag--success">Mobility</span>
+          </div>
+        </div>
+
+        <p class="protocol-overview fade-in">
+          A progressive bodyweight strength program designed for women who haven't trained in a while or are starting from scratch. No gym required. No equipment needed. Just your body and the ground.
+        </p>
+
+        <div class="protocol-grid">
+          <!-- What to Do -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              What to Do
+            </h3>
+            <ul class="protocol-steps">
+              <li><strong>Week 1: Foundation.</strong> 3 sessions. Each session: wall push-ups (3x10), chair-assisted squats (3x10), dead hangs or towel pulls (3x10 sec hold), glute bridges (3x12). Rest 60 sec between sets. Focus on form over speed.</li>
+              <li><strong>Week 2: Build volume.</strong> 3 sessions. Progress to incline push-ups (hands on table/counter), bodyweight squats (3x12), bent-over rows with a filled backpack or water jug (3x10), hip thrusts (3x15).</li>
+              <li><strong>Week 3: Add complexity.</strong> 4 sessions. Knee push-ups (3x8-10), split squats (3x8 each leg), single-leg glute bridges (3x10 each), plank holds (3x20 sec), farmer carries with heavy bags (2x30 sec).</li>
+              <li><strong>Week 4: Test and consolidate.</strong> 4 sessions. Full push-ups or deepest variation you can do (3x max), full squats to depth (3x15), step-ups on a sturdy chair (3x10 each leg), plank (3x30 sec). Test day on Day 28: max push-ups, squat depth photo, timed stair climb.</li>
+            </ul>
+          </div>
+
+          <!-- The Science -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              The Science
+            </h3>
+            <div class="callout callout--science">
+              <p class="callout__title">Why This Works</p>
+              <p>Women lose approximately 3-8% of muscle mass per decade after age 30 (sarcopenia). Resistance training is the single most effective intervention to slow and reverse this. Muscle is metabolically active tissue that improves insulin sensitivity, protects bone density, and supports hormonal balance.</p>
+            </div>
+            <ul>
+              <li>Muscle protein synthesis (MPS) is activated for 24-48 hours after resistance training, even with bodyweight-only exercises in untrained individuals.</li>
+              <li>Resistance training increases growth hormone and IGF-1 in women, both critical for tissue repair and anti-aging processes.</li>
+              <li>Wolff's Law: Bone density increases in response to mechanical stress. Squats, lunges, and push-ups load major bones and reduce osteoporosis risk.</li>
+              <li>A 2019 meta-analysis found that bodyweight training produces comparable strength gains to weight training in beginners during the first 8-12 weeks.</li>
+            </ul>
+          </div>
+
+          <!-- Budget Version -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Budget Version
+            </h3>
+            <ul>
+              <li><strong>100% bodyweight:</strong> Every exercise in this program can be done with zero equipment.</li>
+              <li><strong>Household weights:</strong> Fill a backpack with books for weighted squats. Use water jugs (1-5 liters) for rows and curls. Use a sturdy chair for step-ups and incline push-ups.</li>
+              <li><strong>Resistance bands:</strong> If you invest in one thing, a long loop resistance band (about $5-10) adds enormous versatility.</li>
+              <li><strong>Timer:</strong> Use your phone's built-in timer for rest periods and plank holds.</li>
+            </ul>
+          </div>
+
+          <!-- Cultural Adaptations -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Cultural Adaptations
+            </h3>
+            <ul>
+              <li><strong>West African carry training:</strong> Head-carrying and water-carrying traditions develop incredible core stability, neck strength, and postural endurance. Farmer carries in this program echo that functional pattern.</li>
+              <li><strong>Indian yoga-strength:</strong> Replace the push-up progression with Chaturanga Dandasana progression. Add Utkatasana (chair pose) holds alongside squats. Surya Namaskar A/B can replace warm-ups.</li>
+              <li><strong>Brazilian functional movement:</strong> Capoeira-inspired movements (ginga, role, negativa) build full-body strength, mobility, and coordination simultaneously.</li>
+              <li><strong>Modest exercise environments:</strong> All exercises can be done in a private room with minimal space. No gym or public setting required.</li>
+            </ul>
+          </div>
+
+          <!-- Track Your Progress -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Track Your Progress
+            </h3>
+            <ul>
+              <li><strong>Push-up count:</strong> Max consecutive push-ups (at your current level of progression) on Day 1 vs Day 28.</li>
+              <li><strong>Squat depth:</strong> Take a side-view photo or video on Day 1 and Day 28. Compare hip crease relative to knee.</li>
+              <li><strong>Grip strength:</strong> How long can you hang from a bar or hold heavy bags? Test on Day 1 and Day 28.</li>
+              <li><strong>Stairs test:</strong> Climb 3 flights of stairs. Rate breathlessness (1-10) and leg fatigue (1-10). Compare Day 1 vs Day 28.</li>
+              <li><strong>Consistency:</strong> Track sessions completed. Target: at least 12 of 14 planned sessions.</li>
+            </ul>
+          </div>
+
+          <div class="protocol-detail fade-in">
+            <div class="callout callout--tip">
+              <p class="callout__title">Start Where You Are</p>
+              <p>If wall push-ups feel challenging, that is your starting point and that is perfectly fine. The only wrong workout is the one you skip because it felt "too easy" to count. Every rep builds your foundation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOCOL 4: 21-Day Stress Detox ========== -->
+    <section class="protocol-section" id="stress-detox" aria-labelledby="protocol-stress-title">
+      <div class="container">
+        <div class="protocol-header fade-in">
+          <span class="protocol-duration-badge protocol-duration-badge--blue">21 Days</span>
+          <div class="protocol-difficulty" aria-label="Difficulty: beginner (1 out of 3)">
+            Beginner
+            <span class="protocol-difficulty__dots" aria-hidden="true">
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot"></span>
+              <span class="protocol-difficulty__dot"></span>
+            </span>
+          </div>
+          <h2 class="protocol-title" id="protocol-stress-title">21-Day Stress Detox</h2>
+          <div class="protocol-tags">
+            <span class="tag tag--primary">Stress</span>
+            <span class="tag tag--accent">Brain</span>
+            <span class="tag tag--info">Sleep</span>
+            <span class="tag tag--success">Heart</span>
+          </div>
+        </div>
+
+        <p class="protocol-overview fade-in">
+          A daily nervous system regulation protocol. This is not "just relax." These are specific, evidence-based techniques for downregulating your sympathetic nervous system and building resilience over 21 days.
+        </p>
+
+        <div class="protocol-grid">
+          <!-- What to Do -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              What to Do
+            </h3>
+            <ul class="protocol-steps">
+              <li><strong>Week 1: Breathe.</strong> Every morning, do 5 minutes of physiological sighing (double inhale through nose, long exhale through mouth). Before bed, do 5 minutes of 4-7-8 breathing. Journal stress level (1-10) each night.</li>
+              <li><strong>Week 2: Move and immerse.</strong> Add a daily 15-minute walk without phone or music. Add cold water face splashes (10-15 seconds of cold water on face) once daily to activate the dive reflex and stimulate the vagus nerve.</li>
+              <li><strong>Week 3: Connect and reflect.</strong> Add one social connection per day (call, visit, meaningful text). Do a 5-minute evening gratitude or reflection journal. Review your 21-day stress log and identify your patterns.</li>
+            </ul>
+          </div>
+
+          <!-- The Science -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              The Science
+            </h3>
+            <div class="callout callout--science">
+              <p class="callout__title">Why This Works</p>
+              <p>Chronic stress keeps your sympathetic nervous system ("fight or flight") activated, elevating cortisol, suppressing immune function, disrupting sleep, and accelerating biological aging. The vagus nerve is the main brake on the stress response. You can train it directly through breathing, cold exposure, and social connection.</p>
+            </div>
+            <ul>
+              <li>Balban et al. (2023, Cell Reports Medicine): Cyclic physiological sighing for 5 minutes daily reduced anxiety and improved mood more effectively than mindfulness meditation.</li>
+              <li>Heart rate variability (HRV) increases with vagus nerve stimulation and is a reliable biomarker of stress resilience and biological youth.</li>
+              <li>The mammalian dive reflex: Cold water on the face triggers parasympathetic activation within seconds, lowering heart rate by 10-25%.</li>
+              <li>Social connection reduces cortisol and increases oxytocin, which directly counters the stress response at a hormonal level.</li>
+            </ul>
+          </div>
+
+          <!-- Budget Version -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Budget Version
+            </h3>
+            <div class="callout callout--tip">
+              <p class="callout__title">Completely Free</p>
+              <p>Every single technique in this protocol costs zero money. Breathing is free. Walking is free. Cold water from a tap is free. Talking to another human is free.</p>
+            </div>
+            <ul>
+              <li><strong>Breathing:</strong> No app needed. Set a phone timer for 5 minutes.</li>
+              <li><strong>Cold water:</strong> Splash cold tap water on your face, or hold a cold wet cloth on your forehead and cheeks.</li>
+              <li><strong>Walking:</strong> Anywhere. A hallway, a sidewalk, a yard. No park or trail required.</li>
+              <li><strong>Journaling:</strong> Any scrap of paper works. Write three words if that is all you have energy for.</li>
+              <li><strong>Social connection:</strong> A genuine conversation. A shared meal. A phone call.</li>
+            </ul>
+          </div>
+
+          <!-- Cultural Adaptations -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Cultural Adaptations
+            </h3>
+            <ul>
+              <li><strong>Japanese forest bathing (Shinrin-yoku):</strong> Replace or enhance the daily walk with time among trees or natural settings. Even urban parks count. The practice lowers cortisol, blood pressure, and heart rate.</li>
+              <li><strong>Latin American social medicine:</strong> In many Latin cultures, community is already medicine. Leaning into sobremesa (lingering after meals with conversation), family check-ins, and communal gatherings fulfills the social connection component naturally.</li>
+              <li><strong>African communal support:</strong> Ubuntu philosophy ("I am because we are") — group support circles, shared prayer, communal cooking and eating together. These traditions are deeply stress-regulating at a neurobiological level.</li>
+              <li><strong>Islamic/contemplative traditions:</strong> Dhikr (remembrance practices), wudu (ritual washing with water), and structured prayer breaks map directly onto breathwork and cold water vagal stimulation.</li>
+            </ul>
+          </div>
+
+          <!-- Track Your Progress -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Track Your Progress
+            </h3>
+            <ul>
+              <li><strong>Daily stress score:</strong> Rate 1-10 each evening. Plot your trend line over 21 days.</li>
+              <li><strong>Stress recovery time:</strong> When something stressful happens, how long until you feel calm again? Track in minutes. Should decrease over 21 days.</li>
+              <li><strong>Sleep quality:</strong> Rate 1-10 each morning. Improved stress regulation directly improves sleep.</li>
+              <li><strong>Resting heart rate:</strong> Measure first thing in the morning (use two fingers on your wrist, count for 30 seconds, multiply by 2). A downward trend indicates improved vagal tone.</li>
+            </ul>
+          </div>
+
+          <div class="protocol-detail fade-in">
+            <div class="callout callout--warning">
+              <p class="callout__title">When Stress Is Bigger Than a Protocol</p>
+              <p>If you are experiencing acute trauma, abuse, severe depression, or suicidal thoughts, a lifestyle protocol is not a substitute for professional help. Please reach out to a crisis helpline or mental health professional. This protocol is for everyday chronic stress, not crisis intervention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOCOL 5: 14-Day Gut Repair ========== -->
+    <section class="protocol-section" id="gut-repair" aria-labelledby="protocol-gut-title">
+      <div class="container">
+        <div class="protocol-header fade-in">
+          <span class="protocol-duration-badge protocol-duration-badge--green">14 Days</span>
+          <div class="protocol-difficulty" aria-label="Difficulty: beginner (1 out of 3)">
+            Beginner
+            <span class="protocol-difficulty__dots" aria-hidden="true">
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot"></span>
+              <span class="protocol-difficulty__dot"></span>
+            </span>
+          </div>
+          <h2 class="protocol-title" id="protocol-gut-title">14-Day Gut Repair</h2>
+          <div class="protocol-tags">
+            <span class="tag tag--success">Gut</span>
+            <span class="tag tag--info">Immunity</span>
+            <span class="tag tag--primary">Food</span>
+            <span class="tag tag--accent">Brain</span>
+          </div>
+        </div>
+
+        <p class="protocol-overview fade-in">
+          Rebuilding gut microbiome diversity through food and lifestyle changes. A diverse microbiome is one of the strongest predictors of overall health, immune function, and even mood. This protocol uses fermented foods, fiber diversity, and stress management to rebuild it.
+        </p>
+
+        <div class="protocol-grid">
+          <!-- What to Do -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              What to Do
+            </h3>
+            <ul class="protocol-steps">
+              <li><strong>Day 1-4: Fiber diversity challenge.</strong> Eat 20+ different plant foods this week. This includes fruits, vegetables, legumes, whole grains, nuts, seeds, herbs, and spices. Each unique plant counts once. Track on a list.</li>
+              <li><strong>Day 3-7: Add fermented foods.</strong> Introduce one serving of fermented food per day. Start small (1-2 tablespoons) to avoid gas and bloating. Options: yogurt, kefir, sauerkraut, kimchi, miso, kombucha, or fermented pickles.</li>
+              <li><strong>Day 7-10: Feed the good bacteria.</strong> Increase prebiotic fiber sources: garlic, onions, leeks, asparagus, bananas (slightly green), oats, and legumes. These are the foods your beneficial bacteria eat.</li>
+              <li><strong>Day 10-14: Protect and sustain.</strong> Reduce unnecessary antibiotic exposure (only take when prescribed and necessary). Minimize artificial sweeteners (they disrupt microbiome diversity). Continue fermented food daily. Journal digestion quality.</li>
+            </ul>
+          </div>
+
+          <!-- The Science -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              The Science
+            </h3>
+            <div class="callout callout--science">
+              <p class="callout__title">Why This Works</p>
+              <p>Your gut houses trillions of microorganisms that influence digestion, immune response, hormone metabolism, and even neurotransmitter production. Low microbial diversity is associated with obesity, autoimmune conditions, depression, and accelerated aging.</p>
+            </div>
+            <ul>
+              <li>Sonnenburg et al. (Stanford): Higher plant diversity (30+ plants/week) is the single strongest predictor of gut microbiome diversity, more important than any single "superfood."</li>
+              <li>Wastyk et al. (2021, Cell): 6 servings of fermented foods daily for 10 weeks increased microbiome diversity and reduced inflammatory markers (IL-6, IL-10, IL-12b).</li>
+              <li>The gut-brain axis: 90% of serotonin is produced in the gut. Microbiome composition directly influences mood, anxiety, and cognitive function.</li>
+              <li>Prebiotic fibers are fermented by beneficial bacteria into short-chain fatty acids (butyrate, propionate, acetate), which heal the gut lining and reduce inflammation.</li>
+            </ul>
+          </div>
+
+          <!-- Budget Version -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Budget Version
+            </h3>
+            <ul>
+              <li><strong>Homemade sauerkraut:</strong> Cabbage + salt + a jar + 5-7 days = unlimited fermented vegetables for nearly nothing. Recipes available free online.</li>
+              <li><strong>Homemade yogurt:</strong> Warm milk + a spoonful of existing yogurt as a starter + 8-12 hours in a warm place. Costs the price of milk.</li>
+              <li><strong>Cheap fiber diversity:</strong> Lentils, beans, oats, carrots, onions, garlic, bananas, seasonal greens, and whatever herbs/spices you already have. Herbs and spices count as individual plants.</li>
+              <li><strong>Avoid expensive probiotics:</strong> Probiotic supplements are costly and often less effective than food-based sources. Save your money and make your own ferments.</li>
+            </ul>
+          </div>
+
+          <!-- Cultural Adaptations -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Cultural Adaptations
+            </h3>
+            <ul>
+              <li><strong>Korean kimchi tradition:</strong> Kimchi is one of the most studied fermented foods. Traditional kimchi-making (kimjang) is a communal activity. Any variety of kimchi (baechu, kkakdugi, oi-sobagi) provides excellent probiotic diversity.</li>
+              <li><strong>Japanese miso:</strong> Daily miso soup is a cornerstone of Japanese longevity. Use unpasteurized miso and add it to already-warm (not boiling) broth to preserve live cultures.</li>
+              <li><strong>Eastern European kefir:</strong> Kefir grains can be shared and reused indefinitely. Kefir contains up to 61 strains of bacteria and yeast, far more diverse than yogurt.</li>
+              <li><strong>Indian lassi and buttermilk:</strong> Traditional chaas (spiced buttermilk) and lassi are daily probiotic foods in South Asian cuisine. Raita (yogurt with vegetables) combines probiotics and fiber in one dish.</li>
+            </ul>
+          </div>
+
+          <!-- Track Your Progress -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Track Your Progress
+            </h3>
+            <ul>
+              <li><strong>Plant count:</strong> Track unique plants consumed each week. Target: 20+ in Week 1, 25+ in Week 2.</li>
+              <li><strong>Digestion regularity:</strong> Bowel movements per day and consistency. Regular, well-formed movements indicate improving gut function.</li>
+              <li><strong>Bloating:</strong> Rate 1-10 after meals. Initial increase is normal (Days 3-5 as gut adapts), then should decrease.</li>
+              <li><strong>Energy after meals:</strong> Rate 1-10. Improved gut function reduces post-meal fatigue.</li>
+              <li><strong>Mood log:</strong> Brief daily note on mood. The gut-brain axis means gut improvements often show up as mood improvements first.</li>
+            </ul>
+          </div>
+
+          <div class="protocol-detail fade-in">
+            <div class="callout callout--tip">
+              <p class="callout__title">Go Slow</p>
+              <p>If you are not used to fermented foods or high-fiber eating, increase gradually. Some gas and bloating in the first few days is normal as your microbiome adjusts. Start with small amounts and build up.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOCOL 6: 5-Minute Daily Mobility ========== -->
+    <section class="protocol-section" id="daily-mobility" aria-labelledby="protocol-mobility-title">
+      <div class="container">
+        <div class="protocol-header fade-in">
+          <span class="protocol-duration-badge protocol-duration-badge--gold">Ongoing</span>
+          <div class="protocol-difficulty" aria-label="Difficulty: beginner (1 out of 3)">
+            Beginner
+            <span class="protocol-difficulty__dots" aria-hidden="true">
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot"></span>
+              <span class="protocol-difficulty__dot"></span>
+            </span>
+          </div>
+          <h2 class="protocol-title" id="protocol-mobility-title">5-Minute Daily Mobility</h2>
+          <div class="protocol-tags">
+            <span class="tag tag--success">Mobility</span>
+            <span class="tag tag--primary">Strength</span>
+            <span class="tag tag--accent">Brain</span>
+          </div>
+        </div>
+
+        <p class="protocol-overview fade-in">
+          A daily micro-routine for maintaining full range of motion in every major joint. Five minutes. Every day. This is not stretching for flexibility — it is maintenance for the body you live in, so it keeps working well as you age.
+        </p>
+
+        <div class="protocol-grid">
+          <!-- What to Do -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              What to Do (Daily 5-Minute Flow)
+            </h3>
+            <ul>
+              <li><strong>Minute 1: Neck and shoulders.</strong> Slow neck circles (5 each direction). Shoulder rolls (10 forward, 10 backward). Doorframe chest stretch (30 seconds each side).</li>
+              <li><strong>Minute 2: Spine.</strong> Cat-cow on all fours (10 reps). Thread-the-needle thoracic rotation (5 each side).</li>
+              <li><strong>Minute 3: Hips.</strong> Deep squat hold (30-60 seconds, hold onto something for balance if needed). 90/90 hip switches (5 each side).</li>
+              <li><strong>Minute 4: Legs.</strong> Standing quad stretch (20 sec each side). Calf raises (10 reps). Ankle circles (10 each direction, each foot).</li>
+              <li><strong>Minute 5: Wrists, hands, and integration.</strong> Wrist circles (10 each direction). Finger spread and fist (10 reps). Finish with a full-body reach to the ceiling and fold forward to touch toes (or as close as you can).</li>
+            </ul>
+          </div>
+
+          <!-- The Science -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              The Science
+            </h3>
+            <div class="callout callout--science">
+              <p class="callout__title">Why This Works</p>
+              <p>Joints that are not moved through their full range of motion daily will lose that range. Fascia (the connective tissue wrapping every muscle and organ) becomes stiff and adhesion-prone without regular movement. Daily mobilization keeps synovial fluid flowing, maintains proprioception (body awareness), and prevents the gradual loss of functional movement that defines aging.</p>
+            </div>
+            <ul>
+              <li>Fascial tissue remodels in response to mechanical loading within 24-72 hours. Daily mobilization prevents fascial adhesions and fibrosis.</li>
+              <li>Proprioception declines with age but is maintained through regular joint-loading activities, reducing fall risk significantly.</li>
+              <li>Deep squat ability (full range hip, knee, and ankle flexion) is correlated with lower all-cause mortality in population studies.</li>
+              <li>Wrist and grip mobility/strength are emerging biomarkers of biological age and functional independence.</li>
+            </ul>
+          </div>
+
+          <!-- Budget Version -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Budget Version
+            </h3>
+            <div class="callout callout--tip">
+              <p class="callout__title">Zero Cost, Zero Equipment</p>
+              <p>All you need is a floor, a wall, and a doorframe. That is the entire equipment list.</p>
+            </div>
+            <ul>
+              <li><strong>Floor:</strong> For cat-cow, 90/90 hip switches, and deep squat hold.</li>
+              <li><strong>Wall:</strong> For calf raises (lean against it for balance) and wall-assisted shoulder stretches.</li>
+              <li><strong>Doorframe:</strong> For chest stretch (place forearm on frame, lean through).</li>
+              <li><strong>No mat needed:</strong> A towel or carpet works. Or just the floor.</li>
+            </ul>
+          </div>
+
+          <!-- Cultural Adaptations -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Cultural Adaptations
+            </h3>
+            <ul>
+              <li><strong>Japanese morning radio exercises (Rajio Taiso):</strong> A national tradition since 1928. Millions of Japanese people do this 3-minute routine daily. It covers all major joints and is broadcast on NHK radio every morning. A perfect substitute or complement to this protocol.</li>
+              <li><strong>Indian Surya Namaskar (Sun Salutation):</strong> 2-3 rounds of Sun Salutation A takes about 5 minutes and moves every major joint through its full range. One of the most complete mobility routines ever designed.</li>
+              <li><strong>Chinese Qigong (Ba Duan Jin):</strong> The "Eight Brocades" is a 1,000+ year old sequence of 8 movements that takes about 10-15 minutes and emphasizes gentle, flowing joint mobilization with breath coordination.</li>
+              <li><strong>Floor-sitting cultures:</strong> If you already sit on the floor for meals or socializing, you are maintaining hip and ankle mobility naturally. Add the upper body components to complete the routine.</li>
+            </ul>
+          </div>
+
+          <!-- Track Your Progress -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Track Your Progress
+            </h3>
+            <ul>
+              <li><strong>Sit-and-reach test:</strong> Sit on the floor with legs straight. Reach toward toes. Measure distance from fingertips to toes (or past toes). Test monthly.</li>
+              <li><strong>Shoulder rotation:</strong> Can you clasp hands behind your back (one arm over shoulder, one from below)? Test each side monthly. Note improvement in finger-gap distance.</li>
+              <li><strong>Squat depth:</strong> How deep can you squat with heels flat? Take a side photo monthly. Target: hips below knees with a flat back.</li>
+              <li><strong>Consistency streak:</strong> Track how many consecutive days you complete the routine. The habit is the goal.</li>
+            </ul>
+          </div>
+
+          <div class="protocol-detail fade-in">
+            <div class="callout callout--tip">
+              <p class="callout__title">Anchor It to a Habit</p>
+              <p>Do this routine immediately after brushing your teeth in the morning, or right after your morning coffee. Anchoring a new habit to an existing one (habit stacking) dramatically increases your consistency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOCOL 7: Period-Friendly Strength Program ========== -->
+    <section class="protocol-section" id="period-friendly-strength" aria-labelledby="protocol-period-title">
+      <div class="container">
+        <div class="protocol-header fade-in">
+          <span class="protocol-duration-badge protocol-duration-badge--coral">28-Day Cycle</span>
+          <div class="protocol-difficulty" aria-label="Difficulty: intermediate (2 out of 3)">
+            Intermediate
+            <span class="protocol-difficulty__dots" aria-hidden="true">
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot"></span>
+            </span>
+          </div>
+          <h2 class="protocol-title" id="protocol-period-title">Period-Friendly Strength Program</h2>
+          <div class="protocol-tags">
+            <span class="tag tag--primary">Hormones</span>
+            <span class="tag tag--success">Strength</span>
+            <span class="tag tag--info">Stress</span>
+            <span class="tag tag--accent">Mobility</span>
+          </div>
+        </div>
+
+        <p class="protocol-overview fade-in">
+          A strength training program aligned with the four phases of your menstrual cycle. Instead of fighting your hormones, this protocol works with them for better results, fewer injuries, and less burnout.
+        </p>
+
+        <div class="protocol-grid">
+          <!-- What to Do -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              What to Do
+            </h3>
+            <ul class="protocol-steps">
+              <li><strong>Menstrual Phase (Days 1-5): Rest and restore.</strong> Light movement only: walking, gentle yoga, mobility work, stretching. Energy and hormones are at their lowest. Honor this. This is not laziness; it is biological intelligence.</li>
+              <li><strong>Follicular Phase (Days 6-13): Build and push.</strong> Estrogen is rising. This is your power window. Heavy strength training, progressive overload, trying new movements, high-intensity intervals. Your pain tolerance is higher, recovery is faster, and muscle-building potential peaks.</li>
+              <li><strong>Ovulation Phase (Days 14-16): Peak performance.</strong> Estrogen and testosterone peak. Go for personal records, test maxes, do the hardest workout of your cycle. Energy, confidence, and coordination are at their highest. Be mindful of ligament laxity (estrogen loosens ligaments).</li>
+              <li><strong>Luteal Phase (Days 17-28): Moderate and maintain.</strong> Progesterone rises, body temperature increases, energy gradually decreases. Shift to moderate strength (reduce load by 10-20%), steady-state cardio, and longer warm-ups. Focus on form and endurance rather than intensity. Increase rest between sets.</li>
+            </ul>
+          </div>
+
+          <!-- The Science -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              The Science
+            </h3>
+            <div class="callout callout--science">
+              <p class="callout__title">Why This Works</p>
+              <p>Female hormones fluctuate dramatically across a 28-day cycle, and these fluctuations directly affect strength output, recovery capacity, injury risk, and metabolism. Training programs designed for men (or for a generic "person") ignore these realities. Cycle-synced training respects your biology and produces better outcomes.</p>
+            </div>
+            <ul>
+              <li>Estrogen promotes muscle protein synthesis and has anti-catabolic effects. The follicular phase is the optimal window for building muscle.</li>
+              <li>ACL injury risk is 3-6x higher during the ovulatory phase due to estrogen-mediated ligament laxity. Warm up thoroughly and avoid extreme plyometrics during this window.</li>
+              <li>Progesterone is catabolic (breaks down muscle) and thermogenic (raises body temperature). During the luteal phase, women burn more calories at rest but have reduced exercise tolerance.</li>
+              <li>Hackney (2017): Female athletes who trained in sync with their cycle phases showed improved strength gains compared to those following a fixed program.</li>
+            </ul>
+          </div>
+
+          <!-- Budget Version -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Budget Version
+            </h3>
+            <ul>
+              <li><strong>Bodyweight for every phase:</strong> Menstrual: yoga and walking (free). Follicular: push-up progressions, pistol squat progressions, pull-up progressions (free). Ovulatory: max-rep testing (free). Luteal: tempo training and holds (free).</li>
+              <li><strong>Free cycle tracking:</strong> Use a paper calendar and mark your period start date. Count days. Many free apps exist (Clue, Flo free tier), but paper works perfectly.</li>
+              <li><strong>Household loading:</strong> Use backpack + books for weighted exercises during the follicular/ovulatory phase.</li>
+            </ul>
+          </div>
+
+          <!-- Cultural Adaptations -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Cultural Adaptations
+            </h3>
+            <ul>
+              <li><strong>Cycle-aware living traditions:</strong> Many indigenous and traditional cultures already practice rest during menstruation. This protocol validates that wisdom with modern science. Menstrual rest is not weakness. It is physiological optimization.</li>
+              <li><strong>Rest practices from various cultures:</strong> Red tent traditions, Korean sanhujo (postpartum/menstrual rest), Japanese seirikyuuka (menstrual leave). These cultural practices align with the science of reduced exercise tolerance during the menstrual phase.</li>
+              <li><strong>Collective women's training:</strong> In many cultures, women train together. Group accountability through the cycle phases can be powerful. Share your cycle phase with training partners (if comfortable) to support each other's rhythms.</li>
+            </ul>
+          </div>
+
+          <!-- Track Your Progress -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Track Your Progress
+            </h3>
+            <ul>
+              <li><strong>Energy by cycle phase:</strong> Rate daily energy 1-10 and map it to your cycle phase. After 2-3 cycles, you will see your personal pattern clearly.</li>
+              <li><strong>Strength progress:</strong> Compare your follicular phase strength tests month over month. This is the truest comparison since hormonal conditions are similar.</li>
+              <li><strong>PMS symptom changes:</strong> Rate bloating, mood changes, cramps, and breast tenderness each luteal phase. Many women report reduced PMS within 2-3 cycles of synced training.</li>
+              <li><strong>Cycle regularity:</strong> Note cycle length each month. Regular training often improves cycle regularity.</li>
+            </ul>
+          </div>
+
+          <div class="protocol-detail fade-in">
+            <div class="callout callout--warning">
+              <p class="callout__title">Irregular Cycles</p>
+              <p>If your cycle is very irregular (varies by more than 7 days), tracking phases may be difficult. Focus on listening to your energy levels daily rather than counting days. If your cycle has stopped entirely (amenorrhea), consult a healthcare provider before starting any new exercise program.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROTOCOL 8: Menopause-Friendly Energy Plan ========== -->
+    <section class="protocol-section" id="menopause-energy" aria-labelledby="protocol-menopause-title">
+      <div class="container">
+        <div class="protocol-header fade-in">
+          <span class="protocol-duration-badge protocol-duration-badge--dark">30 Days</span>
+          <div class="protocol-difficulty" aria-label="Difficulty: intermediate (2 out of 3)">
+            Intermediate
+            <span class="protocol-difficulty__dots" aria-hidden="true">
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot protocol-difficulty__dot--filled"></span>
+              <span class="protocol-difficulty__dot"></span>
+            </span>
+          </div>
+          <h2 class="protocol-title" id="protocol-menopause-title">Menopause-Friendly Energy Plan</h2>
+          <div class="protocol-tags">
+            <span class="tag tag--primary">Hormones</span>
+            <span class="tag tag--info">Sleep</span>
+            <span class="tag tag--success">Strength</span>
+            <span class="tag tag--accent">Brain</span>
+            <span class="tag tag--primary">Heart</span>
+          </div>
+        </div>
+
+        <p class="protocol-overview fade-in">
+          A comprehensive energy and vitality protocol for perimenopause and menopause. This is not about fighting the transition. It is about supporting your body through one of its biggest hormonal shifts with targeted nutrition, strength training, sleep strategies, and cognitive support.
+        </p>
+
+        <div class="protocol-grid">
+          <!-- What to Do -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              What to Do
+            </h3>
+            <ul class="protocol-steps">
+              <li><strong>Week 1: Nutrition foundation.</strong> Increase protein to 1.2-1.6 g/kg bodyweight daily (critical for muscle preservation). Add phytoestrogen foods: soy (tofu, edamame, tempeh), flaxseeds, sesame seeds. Increase calcium-rich foods and vitamin D exposure (sunlight or food sources).</li>
+              <li><strong>Week 2: Strength training priority.</strong> Begin or resume resistance training 3x/week. Focus on compound movements: squats, deadlift patterns (hip hinges), push-ups, rows. Use moderate-to-heavy loads. This is the single most important intervention for menopausal health.</li>
+              <li><strong>Week 3: Sleep and temperature management.</strong> Implement the Sleep Repair protocol basics. For hot flashes: layer bedding for easy removal, keep ice water beside the bed, use breathable fabrics, try paced breathing (slow, deep belly breaths) at onset of a flash.</li>
+              <li><strong>Week 4: Brain and heart support.</strong> Add daily omega-3 rich foods for cardiovascular and cognitive support. Practice one cognitively challenging activity daily (learn something new, puzzles, a new language, a new physical skill). Continue all previous weeks' habits. Assess progress.</li>
+            </ul>
+          </div>
+
+          <!-- The Science -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              The Science
+            </h3>
+            <div class="callout callout--science">
+              <p class="callout__title">Why This Works</p>
+              <p>The decline in estrogen during menopause affects nearly every body system: bone density drops, muscle mass decreases faster, cardiovascular risk rises, sleep architecture changes, and thermoregulation becomes unstable. Targeted interventions at each of these systems can dramatically improve quality of life and long-term health outcomes.</p>
+            </div>
+            <ul>
+              <li>Women lose up to 20% of bone density in the 5-7 years following menopause. Resistance training and adequate protein/calcium are the primary non-pharmaceutical interventions.</li>
+              <li>Phytoestrogens (found in soy, flaxseed, sesame) bind to estrogen receptors and provide mild estrogenic effects. Japanese women consuming traditional soy-rich diets report far fewer menopausal symptoms.</li>
+              <li>Cardiovascular risk increases significantly post-menopause (estrogen was protective). Regular exercise and omega-3 fatty acids help maintain endothelial function and lipid profiles.</li>
+              <li>Cognitive changes during menopause ("brain fog") are linked to estrogen's role in hippocampal function. Cognitive challenges and exercise both promote neuroplasticity and BDNF (brain-derived neurotrophic factor) production.</li>
+            </ul>
+          </div>
+
+          <!-- Budget Version -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Budget Version
+            </h3>
+            <ul>
+              <li><strong>Affordable phytoestrogen foods:</strong> Tofu and tempeh are among the cheapest protein sources globally. Flaxseeds and sesame seeds are very inexpensive in bulk. Chickpeas and lentils also contain phytoestrogens.</li>
+              <li><strong>Free strength training:</strong> All exercises can be done bodyweight. A filled backpack provides progressive overload for free.</li>
+              <li><strong>Calcium on a budget:</strong> Canned sardines (with bones), dark leafy greens (collards, kale, bok choy), fortified plant milks, sesame seeds/tahini, and dried figs are all affordable calcium sources.</li>
+              <li><strong>Community support:</strong> Find free menopause support groups online or in your community. Shared experience is one of the most effective tools for navigating this transition.</li>
+              <li><strong>Cognitive challenges:</strong> Free language apps (Duolingo), free puzzles, learning to cook a new cuisine, or teaching yourself a skill via free YouTube tutorials.</li>
+            </ul>
+          </div>
+
+          <!-- Cultural Adaptations -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Cultural Adaptations
+            </h3>
+            <ul>
+              <li><strong>Japanese konenki:</strong> In Japan, menopause (konenki, meaning "renewal years") is viewed as a transition into a new life stage, not a disease or decline. Japanese women report fewer symptoms, partly due to soy-rich diets and cultural framing. Adopting a "renewal" mindset and increasing soy foods aligns with this approach.</li>
+              <li><strong>Mayan transitions:</strong> Among the Maya, post-menopausal women gain social status and freedom. The transition is celebrated, not mourned. Reframing menopause as elevation rather than loss has measurable psychological benefits.</li>
+              <li><strong>Indian Ayurvedic approach:</strong> Ashwagandha, shatavari, and other adaptogenic herbs have traditional use for menopausal support. Warm oil massage (abhyanga) may help with joint stiffness and sleep quality.</li>
+              <li><strong>West African traditions:</strong> Elder women (post-menopause) often hold the most respected positions in community. The transition is integrated into social identity, reducing the isolation many Western women experience.</li>
+            </ul>
+          </div>
+
+          <!-- Track Your Progress -->
+          <div class="protocol-detail fade-in">
+            <h3 class="protocol-detail__heading">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Track Your Progress
+            </h3>
+            <ul>
+              <li><strong>Hot flash frequency:</strong> Track number per day and severity (mild/moderate/severe). Many women see a reduction within 2-4 weeks of dietary and exercise changes.</li>
+              <li><strong>Sleep quality:</strong> Rate 1-10 each morning. Note wake-ups due to temperature, pain, or other causes.</li>
+              <li><strong>Energy levels:</strong> Rate 1-10 at noon and 4 PM. Track weekly averages.</li>
+              <li><strong>Mood stability:</strong> Brief daily note on emotional state. Note anxiety, irritability, or low mood episodes and their frequency.</li>
+              <li><strong>Strength markers:</strong> Track exercise performance in your strength sessions. Even maintaining strength during menopause is a significant win.</li>
+            </ul>
+          </div>
+
+          <div class="protocol-detail fade-in">
+            <div class="callout callout--warning">
+              <p class="callout__title">Talk to Your Doctor</p>
+              <p>If menopausal symptoms are severely impacting your quality of life, hormone replacement therapy (HRT) may be appropriate and should be discussed with your healthcare provider. This protocol complements medical treatment; it does not replace it. Severe symptoms deserve medical attention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ETHICAL NOTE ========== -->
+    <section class="section" aria-labelledby="ethical-heading">
+      <div class="container fade-in">
+        <div class="ethical-note">
+          <h3 id="ethical-heading">A Note on Ethics</h3>
+          <p>
+            These protocols are not medical prescriptions. They are science-informed lifestyle tools created for education and empowerment. Always listen to your body. If something does not feel right, stop. None of these protocols promote restriction, shame, or "quick fix" mentality. Real change takes time, and your body deserves patience, not punishment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-section scale-in">
+          <h2 id="cta-heading">Not Sure Where to Start?</h2>
+          <p>Take your Youth Score to find out which systems need the most attention, then choose the protocol that matches.</p>
+          <a href="youth-score.html" class="btn btn--white btn--large">Take Your Youth Score</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">How To Be <span>Young</span></div>
+          <p class="footer__desc">
+            The global women's longevity playbook. Science-based. Culture-respecting. Free for everyone. Not diet culture. Not cosmetic. Not rich-person wellness.
+          </p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="youth-score.html">Youth Score</a>
+          <a href="youth-systems.html">Youth Systems</a>
+          <a href="protocols.html">Protocols</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Learn</h4>
+          <a href="stories.html">Real Stories</a>
+          <a href="life-stages.html">Life Stages</a>
+          <a href="about.html">About</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Language</h4>
+          <a href="protocols.html">English</a>
+          <a href="../es/protocols.html" hreflang="es">Espa&ntilde;ol</a>
+          <a href="../fr/protocols.html" hreflang="fr">Fran&ccedil;ais</a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 HowToBeYoung.com. Science for every woman, everywhere.</p>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter / X">X</a>
+          <a href="#" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
