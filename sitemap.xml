@@ -310,4 +310,70 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- CHINESE PAGES -->
+  <url>
+    <loc>https://howtobeyoung.com/zh/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://howtobeyoung.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://howtobeyoung.com/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://howtobeyoung.com/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://howtobeyoung.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://howtobeyoung.com/ja/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://howtobeyoung.com/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://howtobeyoung.com/zh/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://howtobeyoung.com/ko/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://howtobeyoung.com/ar/index.html"/>
+  </url>
+  <url><loc>https://howtobeyoung.com/zh/youth-score.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/zh/youth-systems.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/zh/stories.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://howtobeyoung.com/zh/protocols.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/zh/life-stages.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://howtobeyoung.com/zh/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- KOREAN PAGES -->
+  <url>
+    <loc>https://howtobeyoung.com/ko/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://howtobeyoung.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://howtobeyoung.com/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://howtobeyoung.com/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://howtobeyoung.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://howtobeyoung.com/ja/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://howtobeyoung.com/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://howtobeyoung.com/zh/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://howtobeyoung.com/ko/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://howtobeyoung.com/ar/index.html"/>
+  </url>
+  <url><loc>https://howtobeyoung.com/ko/youth-score.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/ko/youth-systems.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/ko/stories.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://howtobeyoung.com/ko/protocols.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/ko/life-stages.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://howtobeyoung.com/ko/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+  <!-- ARABIC PAGES -->
+  <url>
+    <loc>https://howtobeyoung.com/ar/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://howtobeyoung.com/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://howtobeyoung.com/es/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://howtobeyoung.com/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://howtobeyoung.com/de/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://howtobeyoung.com/ja/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://howtobeyoung.com/pt/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://howtobeyoung.com/zh/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://howtobeyoung.com/ko/index.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://howtobeyoung.com/ar/index.html"/>
+  </url>
+  <url><loc>https://howtobeyoung.com/ar/youth-score.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/ar/youth-systems.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/ar/stories.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://howtobeyoung.com/ar/protocols.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://howtobeyoung.com/ar/life-stages.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://howtobeyoung.com/ar/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
 </urlset>
