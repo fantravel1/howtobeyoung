@@ -1,0 +1,47 @@
+{
+  "name": "HowToBeYoung — Science-Based Longevity for Women",
+  "short_name": "HowToBeYoung",
+  "description": "Evidence-based longevity and anti-aging strategies for women at every life stage. Available in 6 languages.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#c8a2c8",
+  "orientation": "any",
+  "lang": "en",
+  "categories": ["health", "lifestyle", "education"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Youth Score Calculator",
+      "short_name": "Youth Score",
+      "url": "/en/youth-score.html",
+      "description": "Calculate your biological youth score across 8 body systems"
+    },
+    {
+      "name": "Youth Systems Guide",
+      "short_name": "Systems",
+      "url": "/en/youth-systems.html",
+      "description": "Explore the 11 pillars of staying young"
+    },
+    {
+      "name": "Protocols",
+      "short_name": "Protocols",
+      "url": "/en/protocols.html",
+      "description": "Actionable daily and weekly youth protocols"
+    }
+  ]
+}

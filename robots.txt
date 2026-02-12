@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://howtobeyoung.com/sitemap.xml
+
+# Crawl-delay suggestion for polite bots
+Crawl-delay: 1
